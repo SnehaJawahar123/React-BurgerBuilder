@@ -1,0 +1,11 @@
+.Logo {
+    background-color: white;
+    padding: 8px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.Logo img{
+    height: 100%;   /* Only then it will be 100% of the above div size, else will take real size*/
+}
