@@ -6,7 +6,7 @@ class Modal extends Component{
 
     shouldComponentUpdate(nextProps, nextState){
         console.log('should update? ',nextProps.showModal !== this.props.showModal )
-        return nextProps.showModal !== this.props.showModal
+        return nextProps.showModal !== this.props.showModal || nextProps.children !== this.props.children
     }
 
     componentDidUpdate(){
@@ -26,7 +26,7 @@ class Modal extends Component{
     
         return (
             <React.Fragment>
-            <Backdrop showModal={this.props.showModal} />
+            <Backdrop showModal={this.props.showModal} close={this.props.close}/>
              {modalView}
              </React.Fragment>
         )
