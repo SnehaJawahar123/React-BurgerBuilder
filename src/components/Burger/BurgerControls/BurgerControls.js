@@ -18,7 +18,7 @@ const burgerControls = (props) => (
                     less={() => { props.less(el.type) }}
                     disabled={props.disabled[el.type]} />
             })}
-            <button className={classes.OrderButton} disabled={props.orderDisabled} onClick={props.ordered}>ORDER NOW</button>
+            <button className={classes.OrderButton} disabled={props.orderDisabled} onClick={props.ordered}>{props.isAuthenticated ? 'ORDER NOW' : 'SIGNIN TO ORDER'}</button>
         </div>
     )
 

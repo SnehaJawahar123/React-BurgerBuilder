@@ -1,0 +1,10 @@
+.Closed{
+    height: auto;
+    width: 400px;
+    margin: auto;
+    margin-top:200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #eee;
+    box-shadow: 0 4px 5px #aaa;
+}
