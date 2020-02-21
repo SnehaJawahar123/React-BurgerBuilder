@@ -13,7 +13,7 @@ import * as burgerBuilderAction from '../../store/actions/index'
 import {Redirect} from 'react-router-dom'
 
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
 
     state = {
         ingredients: null,
